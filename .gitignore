@@ -62,3 +62,10 @@ build/
 
 ## OS Specific
 .DS_Store
+*.so
+*.gradle
+android/build.gradle
+android/proguard-project.txt
+build.gradle
+gradle/wrapper/gradle-wrapper.properties
+ios/robovm.xml
