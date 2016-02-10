@@ -5,4 +5,13 @@ package com.blox.game.helper;
  */
 public class GameRenderer {
 
+	private GameWorld gameWorld;
+	
+	public GameRenderer(GameWorld gameWorld) {
+		this.gameWorld = gameWorld;
+	}
+	
+	public void render() {
+		
+	}
 }

@@ -1,18 +1,27 @@
 package com.blox.game.screen;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.blox.game.helper.*;
 
 public class GameScreen implements Screen {
+	
+	private GameWorld gameWorld;
+	private GameRenderer gameRenderer;
 
+	public GameScreen() {
+		super();
+		gameWorld = new GameWorld();
+		gameRenderer = new GameRenderer(gameWorld);
+	}
+	
 	@Override
 	public void show() {
-		Gdx.app.log(this.toString(), "show");
 	}
 
 	@Override
 	public void render(float delta) {
-		
+		gameWorld.update(delta);
+		gameRenderer.render();
 	}
 
 	@Override
