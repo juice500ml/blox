@@ -8,9 +8,8 @@ public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		
-		// WVGA (800x480)
-		config.width = 800;
-		config.height = 480;
+		config.width = blox.gameWidth;
+		config.height = blox.gameHeight;
 		
 		new LwjglApplication(new blox(), config);
 	}
