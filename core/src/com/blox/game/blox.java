@@ -7,6 +7,7 @@ public class blox extends Game {
 
 	@Override
 	public void create() {
+		// Temporary code. Starts the game immediately. To be changed after.
 		setScreen(new GameScreen());
 	}
 	
